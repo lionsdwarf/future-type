@@ -5,36 +5,81 @@ body {
 
 nav {
   width: 100%;
+  position: absolute;
+  top: 90%;
 }
 
-#logo {
-  /*height: 100%;*/
-  width: 76em;
-  height: 76em;
-  background-size: cover;
-  background: url(../assets/orange_still.jpg) no-repeat;
-  
-}
-
-#logo:hover {
-  background: url(../assets/loop.gif) no-repeat;
+.logo-img {
+  position: absolute;
+  height: 85%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .nav-links {
-  width: 80%;
   margin: 0 auto;
-
+  text-align: center;
 }
 
 .link {
-  display: inline;
-  font-family: 'Special Elite', cursive;
+  display: inline-block;
+  font-family: 'News Cycle', sans-serif;
   margin-left: 1em;
   margin-right: 1em;
   font-size: 2em;
-  color: darkgrey;
+  color: rgba(0,0,0,0.7);
+}
+
+.overlay {
+  position: absolute;
+  height: 75%;
+  width: 45%;
+  background-color: rgba(255,255,255,0.7);
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.overlay-content {
+  color: rgba(0,0,0,0.5);
+  width: 80%;
+  height: 5%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 3em;
+  text-align: center;
+}
+
+.close {
+  height: 1em;
+  cursor: pointer;
+  float: right;
 }
 
 .link:hover {
   cursor: pointer;
+}
+
+.logo-img-purple {
+  opacity: 1;
+  z-index: 1;
+}
+
+.logo-img-purple:hover {
+  opacity: 0;
+  z-index: -1;
+}
+
+.logo-ing-orange {
+  opacity: 0;
+}
+
+.logo-img-orange:hover {
+  opacity: 1;
 }
