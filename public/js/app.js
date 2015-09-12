@@ -5,13 +5,13 @@ $(function() {
   $('#music-link').click(showMusic);
   $('#dates-link').click(showDates);
   $('#photos-link').click(showPhotos);
-  $('#contact-link').click(showContact);
+  $('#connect-link').click(showConnect);
 
 
 });
 
 var hideModals = function() {
-  $('.overlay').fadeOut(1000);
+  $('.overlay').fadeOut(200);
 };
 
 var showMusic = function() {
@@ -28,7 +28,7 @@ var showPhotos = function() {
   hideModals();
   $('#photos-overlay').fadeIn(700);
 };
-var showContact = function() {
+var showConnect = function() {
   hideModals();
   $('#contact-overlay').fadeIn(700);
 };
